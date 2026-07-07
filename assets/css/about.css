@@ -1,0 +1,254 @@
+/*======================================
+    ABOUT SECTION
+======================================*/
+
+.about-section{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.section-badge{
+
+    display:inline-block;
+
+    background:#E0F2FE;
+
+    color:#2563EB;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.section-title{
+
+    font-size:48px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    margin-bottom:15px;
+
+}
+
+.section-subtitle{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#64748B;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+.about-image{
+
+    position:relative;
+
+    display:inline-block;
+
+}
+
+.about-image img{
+
+    width:360px;
+
+    height:360px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    border:8px solid white;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+    transition:.35s;
+
+}
+
+.about-image img:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.about-heading{
+
+    font-size:36px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+    margin-bottom:20px;
+
+}
+
+.about-section p{
+
+    color:#64748B;
+
+    line-height:1.9;
+
+    font-size:17px;
+
+}
+
+.about-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.about-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.about-card i{
+
+    font-size:40px;
+
+    color:#2563EB;
+
+    margin-bottom:20px;
+
+}
+
+.about-card h3{
+
+    font-size:40px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    margin-bottom:10px;
+
+}
+
+.about-card p{
+
+    margin:0;
+
+    color:#64748B;
+
+    font-weight:600;
+
+}
+
+/*======================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:991px){
+
+.about-section{
+
+text-align:center;
+
+}
+
+.about-image img{
+
+width:280px;
+
+height:280px;
+
+margin-bottom:40px;
+
+}
+
+.section-title{
+
+font-size:38px;
+
+}
+
+.about-heading{
+
+font-size:30px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.section-title{
+
+font-size:32px;
+
+}
+
+.about-heading{
+
+font-size:26px;
+
+}
+
+.about-card{
+
+padding:30px 20px;
+
+}
+
+.about-card h3{
+
+font-size:32px;
+
+}
+
+
+}
+
+/*======================================
+    COUNTER
+======================================*/
+
+.counter{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+    transition:.3s;
+
+}
+
+.card-modern:hover .counter{
+
+    transform:scale(1.08);
+
+}

@@ -1,0 +1,264 @@
+.footer{
+
+    background:#0F172A;
+
+    color:#CBD5E1;
+
+    padding:80px 0 25px;
+
+}
+
+.footer-logo{
+
+    color:#fff;
+
+    font-weight:700;
+
+}
+
+.footer-description{
+
+    margin-top:20px;
+
+    line-height:1.8;
+
+}
+
+.footer h5{
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+}
+
+.footer ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.footer ul li{
+
+    margin-bottom:12px;
+
+}
+
+.footer ul li a{
+
+    color:#CBD5E1;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer ul li a:hover{
+
+    color:#38BDF8;
+
+}
+
+.footer-social{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+.footer-social a{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#1E293B;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    transition:.3s;
+
+}
+
+.footer-social a:hover{
+
+    background:#2563EB;
+
+    transform:translateY(-5px);
+
+}
+
+.footer hr{
+
+    border-color:#334155;
+
+    margin:50px 0 25px;
+
+}
+
+.footer-bottom{
+
+    color:#94A3B8;
+
+}
+
+/*======================================
+FOOTER
+======================================*/
+
+.footer{
+
+    background:#0F172A;
+
+    color:#CBD5E1;
+
+    padding:80px 0 30px;
+
+}
+
+.footer h3,
+.footer h5{
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+}
+
+.footer p{
+
+    color:#94A3B8;
+
+    line-height:1.8;
+
+}
+
+.footer-links{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.footer-links li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-links a{
+
+    color:#CBD5E1;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#38BDF8;
+
+    padding-left:8px;
+
+}
+
+.footer-social{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.footer-social a{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    background:#1E293B;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+    font-size:22px;
+
+    transition:.35s;
+
+}
+
+.footer-social a:hover{
+
+    background:#2563EB;
+
+    transform:translateY(-6px);
+
+}
+
+.footer hr{
+
+    border-color:rgba(255,255,255,.12);
+
+    margin:50px 0 25px;
+
+}
+
+.footer-bottom{
+
+    text-align:center;
+
+    color:#94A3B8;
+
+    font-size:15px;
+
+}
+
+/*======================================
+BACK TO TOP
+======================================*/
+
+@media(max-width:768px){
+
+    .back-to-top{
+
+        width:50px;
+
+        height:50px;
+
+        right:20px;
+
+        bottom:20px;
+
+        font-size:20px;
+
+    }
+
+}

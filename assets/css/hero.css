@@ -1,0 +1,498 @@
+/*======================================
+HERO SECTION
+======================================*/
+
+.hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #F8FAFC 0%,
+        #EEF5FF 100%
+    );
+
+}
+
+.hero .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*======================================
+BACKGROUND GLOW
+======================================*/
+
+.hero-bg-circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(90px);
+
+    z-index:0;
+
+}
+
+.hero-circle-1{
+
+    width:350px;
+
+    height:350px;
+
+    background:#38BDF8;
+
+    top:-120px;
+
+    left:-120px;
+
+    opacity:.22;
+
+}
+
+.hero-circle-2{
+
+    width:420px;
+
+    height:420px;
+
+    background:#2563EB;
+
+    right:-160px;
+
+    bottom:-150px;
+
+    opacity:.18;
+
+}
+
+/*======================================
+LEFT CONTENT
+======================================*/
+
+.hero-badge{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    background:#E0F2FE;
+
+    color:#2563EB;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.hero-intro{
+
+    color:#2563EB;
+
+    font-weight:700;
+
+}
+
+.hero-title{
+
+    font-size:72px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    margin:10px 0;
+
+    line-height:1.1;
+
+}
+
+.hero-typing{
+
+    color:#2563EB;
+
+    font-weight:700;
+
+    min-height:55px;
+
+}
+
+.hero-description{
+
+    max-width:540px;
+
+    font-size:19px;
+
+    color:#64748B;
+
+    line-height:1.9;
+
+    margin-top:20px;
+
+}
+
+
+/*======================================
+HERO PHOTO
+======================================*/
+
+.hero-photo-wrapper{
+
+    position:relative;
+
+    width:430px;
+
+    height:430px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-glow{
+
+    position:absolute;
+
+    width:360px;
+
+    height:360px;
+
+    background:radial-gradient(circle,#38BDF8 0%,transparent 70%);
+
+    filter:blur(50px);
+
+    opacity:.45;
+
+    animation:pulseGlow 5s ease-in-out infinite;
+
+}
+
+.hero-photo{
+
+    width:330px;
+
+    height:330px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:8px solid #fff;
+
+    box-shadow:0 30px 60px rgba(0,0,0,.18);
+
+    position:relative;
+
+    z-index:10;
+
+    animation:floatPhoto 5s ease-in-out infinite;
+
+}
+
+/*======================================
+ROTATING ORBIT
+======================================*/
+
+.hero-orbit{
+
+    position:absolute;
+
+    width:430px;
+
+    height:430px;
+
+    border-radius:50%;
+
+    animation:rotateOrbit 20s linear infinite;
+
+}
+
+/*======================================
+ORBIT ITEMS
+======================================*/
+
+.orbit-item{
+
+    position:absolute;
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:20px;
+
+    background:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+    animation:counterRotate 20s linear infinite;
+
+}
+
+/* TOP */
+
+.php{
+
+    top:-35px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+/* RIGHT */
+
+.js{
+
+    right:-35px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+
+/* LEFT */
+
+.sql{
+
+    left:-35px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+
+/* LOWER LEFT */
+
+.python{
+
+    bottom:20px;
+
+    left:20px;
+
+}
+
+/* LOWER RIGHT */
+
+.powerbi{
+
+    bottom:20px;
+
+    right:20px;
+
+}
+
+/* UPPER RIGHT */
+
+.laravel{
+
+    top:40px;
+
+    right:20px;
+
+}
+
+/*======================================
+ANIMATIONS
+======================================*/
+
+@keyframes rotateOrbit{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@keyframes counterRotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(-360deg);
+
+    }
+
+}
+
+@keyframes floatPhoto{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+
+@keyframes pulseGlow{
+
+    0%,100%{
+
+        transform:scale(1);
+
+        opacity:.40;
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+        opacity:.60;
+
+    }
+
+}
+
+.orbit-item i{
+
+    font-size:34px;
+
+}
+
+/*======================================
+SCROLL INDICATOR
+======================================*/
+
+.scroll-indicator{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:30px;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:10px;
+
+    z-index:20;
+
+}
+
+.scroll-indicator span{
+
+    font-size:13px;
+
+    color:#64748B;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.mouse{
+
+    width:28px;
+
+    height:48px;
+
+    border:2px solid #2563EB;
+
+    border-radius:30px;
+
+    position:relative;
+
+}
+
+.wheel{
+
+    width:5px;
+
+    height:10px;
+
+    background:#2563EB;
+
+    border-radius:10px;
+
+    position:absolute;
+
+    left:50%;
+
+    top:8px;
+
+    transform:translateX(-50%);
+
+    animation:scrollWheel 1.6s infinite;
+
+}
+
+@keyframes scrollWheel{
+
+    0%{
+
+        opacity:1;
+
+        transform:translate(-50%,0);
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:translate(-50%,16px);
+
+    }
+
+}

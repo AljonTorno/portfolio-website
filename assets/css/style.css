@@ -1,0 +1,432 @@
+/*=========================================
+    AT PORTFOLIO DESIGN SYSTEM
+=========================================*/
+
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*=========================================
+ROOT VARIABLES
+=========================================*/
+
+:root{
+
+    --primary:#2563EB;
+    --primary-light:#38BDF8;
+
+    --dark:#0F172A;
+
+    --text:#334155;
+
+    --gray:#64748B;
+
+    --light:#F8FAFC;
+
+    --white:#FFFFFF;
+
+    --radius:18px;
+
+    --transition:.35s ease;
+
+    --shadow:
+        0 15px 40px rgba(0,0,0,.08);
+
+}
+
+/*=========================================
+RESET
+=========================================*/
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--light);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+section{
+
+    padding:120px 0;
+
+}
+
+/*=========================================
+HEADINGS
+=========================================*/
+
+h1,h2,h3,h4,h5,h6{
+
+    color:var(--dark);
+
+    font-weight:700;
+
+}
+
+p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+/*=========================================
+SECTION TITLE
+=========================================*/
+
+.section-badge{
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    border-radius:999px;
+
+    background:#E0F2FE;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.section-title{
+
+    font-size:48px;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+}
+
+.section-subtitle{
+
+    max-width:720px;
+
+    margin:auto;
+
+    color:var(--gray);
+
+}
+
+/*=========================================
+BUTTONS
+=========================================*/
+
+.btn{
+
+    border-radius:999px;
+
+    padding:14px 28px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 30px rgba(37,99,235,.25);
+
+}
+
+.btn-outline-primary{
+
+    border:2px solid var(--primary);
+
+}
+
+.btn-outline-primary:hover{
+
+    background:var(--primary);
+
+}
+
+/*=========================================
+CARD
+=========================================*/
+
+.card-modern{
+
+    background:var(--white);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.card-modern:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/*=========================================
+UTILITY
+=========================================*/
+
+.shadow-soft{
+
+    box-shadow:var(--shadow);
+
+}
+
+.rounded-xl{
+
+    border-radius:var(--radius);
+
+}
+
+.text-primary{
+
+    color:var(--primary)!important;
+
+}
+
+.bg-primary-soft{
+
+    background:#EFF6FF;
+
+}
+
+/*======================================
+ACTIVE NAV
+======================================*/
+
+
+/* Space para hindi matakpan ng fixed navbar ang Hero */
+
+body{
+
+    padding-top:85px;
+
+}
+
+
+
+
+
+
+
+
+.php{
+
+    top:-20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+.sql{
+
+    left:-30px;
+
+    top:45%;
+
+}
+
+.js{
+
+    right:-30px;
+
+    top:45%;
+
+}
+
+.python{
+
+    bottom:20px;
+
+    left:10%;
+
+}
+
+.powerbi{
+
+    bottom:20px;
+
+    right:10%;
+
+}
+
+.laravel{
+
+    top:20%;
+
+    right:-20px;
+
+}
+
+/*======================================
+DARK MODE
+======================================*/
+
+.theme-toggle{
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.theme-toggle:hover{
+
+    transform:rotate(180deg);
+
+    background:#2563EB;
+
+    color:#fff;
+
+}
+
+/* DARK THEME */   
+
+body.dark{
+
+    background:#0F172A;
+
+    color:#E2E8F0;
+
+}
+
+body.dark section{
+
+    background:#0F172A;
+
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6{
+
+    color:#F8FAFC;
+
+}
+
+body.dark p{
+
+    color:#CBD5E1;
+
+}
+
+body.dark .navbar{
+
+    background:rgba(15,23,42,.95);
+
+}
+
+body.dark .card-modern,
+body.dark .project-card,
+body.dark .project-modal{
+
+    background:#1E293B;
+
+    color:#fff;
+
+}
+
+body.dark .filter-btn{
+
+    background:#1E293B;
+
+    color:#E2E8F0;
+
+}
+
+body.dark .filter-btn.active{
+
+    background:#2563EB;
+
+}
+
+body.dark .project-search input{
+
+    background:#1E293B;
+
+    color:#fff;
+
+}
+
+body.dark .project-search input::placeholder{
+
+    color:#94A3B8;
+
+}
+
+body.dark .section-badge{
+
+    background:#1E3A8A;
+
+    color:#fff;
+
+}
+

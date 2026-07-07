@@ -1,0 +1,666 @@
+/*======================================
+PROJECTS SECTION
+======================================*/
+
+.projects{
+
+    background:#F8FAFC;
+
+    padding:120px 0;
+
+}
+
+/*======================================
+PROJECT CARD
+======================================*/
+
+.project-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 25px 60px rgba(37,99,235,.18);
+
+}
+
+/*======================================
+IMAGE
+======================================*/
+
+.project-image{
+
+    overflow:hidden;
+
+    height:240px;
+
+    background:#E2E8F0;
+
+}
+
+.project-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.45s ease;
+
+}
+
+.project-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*======================================
+BODY
+======================================*/
+
+.project-body{
+
+    padding:30px;
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.project-body h4{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+    color:#0F172A;
+
+}
+
+.project-body p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    margin-bottom:22px;
+
+}
+
+/*======================================
+TECH TAGS
+======================================*/
+
+.project-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:28px;
+
+}
+
+.project-tags span{
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+/*======================================
+BUTTONS
+======================================*/
+
+.project-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:auto;
+
+}
+
+.project-buttons .btn{
+
+    flex:1;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    padding:12px;
+
+}
+
+/*======================================
+HOVER EFFECT
+======================================*/
+
+.project-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:22px;
+
+    pointer-events:none;
+
+}
+
+/*======================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:991px){
+
+    .project-image{
+
+        height:220px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .project-body{
+
+        padding:22px;
+
+    }
+
+    .project-buttons{
+
+        flex-direction:column;
+
+    }
+
+}
+
+/*======================================
+PROJECT OVERLAY
+======================================*/
+
+.project-image{
+
+    position:relative;
+
+}
+
+.project-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(15,23,42,.65);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.project-card:hover .project-overlay{
+
+    opacity:1;
+
+}
+
+.project-view{
+
+    background:#fff;
+
+    color:#2563EB;
+
+    padding:12px 25px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.project-view:hover{
+
+    transform:scale(1.08);
+
+}
+
+/*======================================
+FEATURED BADGE
+======================================*/
+
+.featured-badge{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    background:#FACC15;
+
+    color:#111827;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+/*======================================
+YEAR
+======================================*/
+
+.project-year{
+
+    display:inline-block;
+
+    margin-bottom:10px;
+
+    color:#2563EB;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+/*======================================
+PREMIUM PROJECT CARD
+======================================*/
+
+.project-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.project-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:22px;
+
+    padding:2px;
+
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #38BDF8,
+        transparent
+    );
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+    mask-composite:exclude;
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.project-card:hover::before{
+
+    opacity:1;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.project-buttons .btn{
+
+    transition:.3s;
+
+}
+
+.project-buttons .btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.project-tags span{
+
+    transition:.3s;
+
+}
+
+.project-tags span:hover{
+
+    background:#2563EB;
+
+    color:#fff;
+
+}
+
+.project-body h4{
+
+    transition:.3s;
+
+}
+
+.project-card:hover h4{
+
+    color:#2563EB;
+
+}
+
+/*======================================
+PROJECT MODAL
+======================================*/
+
+.project-modal{
+
+    border:none;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+}
+
+.project-modal .modal-header{
+
+    background:#F8FAFC;
+
+    padding:30px;
+
+}
+
+.project-modal .modal-body{
+
+    padding:35px;
+
+}
+
+.project-modal img{
+
+    border-radius:20px;
+
+}
+
+.project-modal h4{
+
+    color:#0F172A;
+
+    font-weight:700;
+
+}
+
+.project-modal p{
+
+    line-height:1.9;
+
+}
+
+/*======================================
+PROJECT FILTER
+======================================*/
+
+.project-filter{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.filter-btn{
+
+    border:none;
+
+    padding:12px 28px;
+
+    border-radius:50px;
+
+    background:#F1F5F9;
+
+    color:#334155;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.filter-btn:hover{
+
+    background:#2563EB;
+
+    color:#fff;
+
+}
+
+.filter-btn.active{
+
+    background:#2563EB;
+
+    color:#fff;
+
+}
+
+.project-item{
+
+    transition:.45s;
+
+}
+
+/*======================================
+PROJECT FILTER
+======================================*/
+
+.project-filter{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-bottom:50px;
+
+}
+
+.filter-btn{
+
+    padding:12px 28px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#F1F5F9;
+
+    color:#334155;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.filter-btn:hover{
+
+    background:#2563EB;
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+}
+
+.filter-btn.active{
+
+    background:#2563EB;
+
+    color:#fff;
+
+    box-shadow:0 10px 25px rgba(37,99,235,.25);
+
+}
+
+/* Animation */
+
+.project-item{
+
+    transition:
+        opacity .45s ease,
+        transform .45s ease;
+
+}
+
+.project-item.hide{
+
+    opacity:0;
+
+    transform:scale(.9);
+
+    pointer-events:none;
+
+}
+
+.project-item.show{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+/*======================================
+PROJECT SEARCH
+======================================*/
+
+.project-search{
+
+    position:relative;
+
+}
+
+.project-search i{
+
+    position:absolute;
+
+    left:20px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#64748B;
+
+}
+
+.project-search input{
+
+    height:60px;
+
+    border-radius:50px;
+
+    padding-left:55px;
+
+    border:none;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.project-search input:focus{
+
+    box-shadow:0 15px 35px rgba(37,99,235,.20);
+
+    border:2px solid #2563EB;
+
+}
+
+#projectCounter{
+
+    color:#64748B;
+
+    font-weight:600;
+
+}
